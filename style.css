@@ -10,13 +10,45 @@ hr.dotted {
 .overAll{
     width: 960px;
     display: grid;
-    grid-template-areas: 'nav nav'
-                         'top top top'
-                         'biggy'
-                         'leftBox rightBox'
-                         'leftBottom leftBottom bottomButton';
+    grid-template-areas: 'navLeft navRight'
+                         'titleArea titleArea titleArea'
+                         'biggie'
+                         'recipeBox'
+                         'leftBottom middleBottom bottomRight'
+                         'bottomStuff';
 }
-
+.navyLeft{
+    grid-area: navLeft;
+    width: 50%;
+}
+.navyRight{
+    grid-area: navRight;
+    width: 50%;
+}
+.top{
+    grid-area: titleArea;
+    width: 50%;
+}
+.biggie{
+    grid-area: biggie;
+    width: 960px;
+}
+.leftBox{ 
+background-color: blue;}
+.rightBox{ 
+    background-color:yellow;}
+.leftBottom{ grid-area: leftBottom;}
+.middleBottom{ grid-area: middleBottom;}
+.rightBottom{ grid-area: rightBottom;}
+#bottomStuff{ grid-area: bottomStuff;}
+.recipeBox{
+    background-image: url(assets/list-bg.png);
+    background-color:pink;
+    grid-area: recipeBox;
+width: 960px;}
+.icon{
+    display: inline;
+}
 .row:before, 
 .row:after {
     content:"";
