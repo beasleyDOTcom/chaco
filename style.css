@@ -7,3 +7,22 @@
 hr.dotted {
     border-top: 10px dotted grey;
   }
+.overAll{
+    width: 960px;
+    display: grid;
+    grid-template-areas: 'nav nav'
+                         'top top top'
+                         'biggy'
+                         'leftBox rightBox'
+                         'leftBottom leftBottom bottomButton';
+}
+
+.row:before, 
+.row:after {
+    content:"";
+    display: table ;
+    clear:both;
+}
+ul {
+    display: inline;
+}
