@@ -1,0 +1,9 @@
+
+
+
+.checkers:checked + label{
+    text-decoration: line-through;
+}
+hr.dotted {
+    border-top: 10px dotted grey;
+  }
