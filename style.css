@@ -1,53 +1,32 @@
-
-
-
-.checkers:checked + label{
-    text-decoration: line-through;
-}
-hr.dotted {
-    border-top: 10px dotted grey;
-  }
 .overAll{
     width: 960px;
     display: grid;
-    grid-template-areas: 'navLeft navRight'
-                         'titleArea titleArea titleArea'
-                         'biggie'
-                         'recipeBox'
-                         'leftBottom middleBottom bottomRight'
-                         'bottomStuff';
+    background-color: lightpink;
+    
 }
-.navyLeft{
-    grid-area: navLeft;
+.row{
+    background-color: light grey;
+}
+#navLeft{
+    float: left;
+}
+
+
+#navRight{
+    float: right;
+    background-color: white;
+}
+
+.column2{
     width: 50%;
 }
-.navyRight{
-    grid-area: navRight;
-    width: 50%;
-}
-.top{
-    grid-area: titleArea;
-    width: 50%;
-}
-.biggie{
-    grid-area: biggie;
-    width: 960px;
-}
-.leftBox{ 
-background-color: blue;}
-.rightBox{ 
-    background-color:yellow;}
-.leftBottom{ grid-area: leftBottom;}
-.middleBottom{ grid-area: middleBottom;}
-.rightBottom{ grid-area: rightBottom;}
-#bottomStuff{ grid-area: bottomStuff;}
-.recipeBox{
-    background-image: url(assets/list-bg.png);
-    background-color:pink;
-    grid-area: recipeBox;
-width: 960px;}
 .icon{
     display: inline;
+}
+[class*='column'] {
+    float: left;
+    min-height: 1px;
+    min-width: 16.66%; 
 }
 .row:before, 
 .row:after {
@@ -58,3 +37,15 @@ width: 960px;}
 ul {
     display: inline;
 }
+.checkers:checked + label{
+    text-decoration: line-through;
+}
+hr.dotted {
+    border-top: 10px dotted grey;
+  }
+   
+
+.biggie{
+    width: 960px;
+}
+
