@@ -8,21 +8,37 @@ hr.dotted {
     border-top: 10px dotted grey;
   }
 .overAll{
-    width: 960px;
-    display: grid;
-    grid-template-areas: 'nav nav'
-                         'top top top'
-                         'biggy'
-                         'leftBox rightBox'
-                         'leftBottom leftBottom bottomButton';
+    width: 960px; 
 }
-
+#navLogo{
+    background-color:lightpink;
+    
+}
 .row:before, 
 .row:after {
     content:"";
     display: table ;
     clear:both;
 }
-ul {
+.row1{
+    display: grid;
+    grid-template-columns: 31px auto auto;
+    grid-row: auto;
+}
+
+.cursive{
+    justify-self: left;
+    background-color:lightpink;
+}
+.token{
     display: inline;
+    align-self: center;
+    justify-self: right;
+}
+ul{
+    display: inline;
+}
+.bigPic{
+    width: 960px;
+    height: auto;
 }
