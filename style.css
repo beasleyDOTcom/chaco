@@ -1,0 +1,83 @@
+
+
+
+.checkers:checked + label{
+    text-decoration: line-through;
+    color: black;
+}
+hr.dotted {
+    border-top: 10px dotted grey;
+  }
+.overAll{
+    width: 960px; 
+}
+#navLogo{
+    background-color:lightpink;
+    width: 42px;
+    height: 45px;
+}
+.row:before, 
+.row:after {
+    content:"";
+    display: table ;
+    clear:both;
+}
+.row1{
+    display: grid;
+    grid-template-columns: 42px auto auto;
+    grid-row: auto;
+}
+#deli{
+    font-family: cursive;
+}
+.cursive{
+    justify-self: left;
+}
+small{
+    color: lightgray;
+}
+.token{
+    display: inline;
+    align-self: center;
+    justify-self: right;
+}
+.brainy{
+    display: inline;
+}
+#desserts{
+    grid-column: 50% 50%;
+    grid-row: auto;
+}
+#left{
+    float: left;
+}
+#printRight{
+    float: right;
+}
+.bigPic{
+    width: 960px;
+    height: auto;
+}
+#recipeBox{
+    width: 960px;
+    height: 40vh;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-row: auto;
+    background-image: url(assets/list-bg.png);
+    justify-items: center;
+}
+.checkers{
+    display: block;
+}
+#bottomTown{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    align-items: center;
+}
+button{
+ background-color: orangered;
+ color: white;
+ height: 7vh;
+ width: 10vw;
+}
